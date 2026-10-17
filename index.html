@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4e8d8">
+  <meta name="description" content="A little birthday surprise made with love.">
+  <title>A Little Birthday Surprise 🤎</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"><span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span></div>
+  <main class="app-shell">
+    <div class="topline"><span class="tiny-heart">♥</span><span>made of little memories</span><span class="tiny-heart">♥</span></div>
+
+    <section class="screen active" id="welcome" aria-labelledby="welcome-title">
+      <div class="eyebrow"><span class="dot"></span> A tiny surprise,for you Doremi</div>
+      <div class="welcome-art" aria-hidden="true">
+        <div class="sun-disc"></div><div class="flower flower-a">✿</div><div class="flower flower-b">✾</div>
+        <div class="ribbon">for my favorite girl+bestie</div>
+        <div class="heart-stamp">♡</div>
+      </div>
+      <p class="handwritten">Hii, it's for today's born <b>18-10</b></p>
+      <h1 id="welcome-title">one <em>special</em> soul.</h1>
+      <p class="lead">Some people make ordinary days feel a little more golden. Today is all about celebrating you. 🤎</p>
+      <blockquote class="hindi-quote">"Tere hone se ye jindagi meri
+                      <br>Roshni hi roshni hai, 
+                      <br>Varnan ham andheron ke kafir
+                      <br>Kaha in roshni o me ulajte... 😶‍🌫"</blockquote>
+      <button class="primary-button" id="start-button">Let’s start <span>↗</span></button>
+      <p class="microcopy">a little love is waiting on the next page</p>
+    </section>
+
+    <section class="screen" id="date-screen" aria-labelledby="date-title">
+      <div class="section-icon">♡</div>
+      <p class="handwritten">just one little thing...</p>
+      <h2 id="date-title">Hii, special one <span>✧</span></h2>
+      <p class="lead">Enter our <strong>special date</strong> to unlock the next little chapter.</p>
+      <div class="date-display" id="date-display" aria-live="polite"><span class="date-placeholder">MMDD</span></div>
+      <div class="keypad" aria-label="Number keypad">
+        <button data-key="1">1</button><button data-key="2">2<span class="key-heart">♡</span></button><button data-key="3">3</button>
+        <button data-key="4">4</button><button data-key="5">5<span class="key-heart">♡</span></button><button data-key="6">6</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9<span class="key-heart">♡</span></button>
+        <button class="key-special" data-key="clear">⌫</button><button data-key="0">0</button><button class="key-special" data-key="submit">♡</button>
+      </div>
+      <p class="hint"><span>✧ hint</span> first day of expressing feelings each other</p>
+      <p class="status-message" id="date-status" role="status"></p>
+      <button class="text-button back-button" type="button" data-back="welcome">← back</button>
+    </section>
+
+    <section class="screen" id="birthday-screen" aria-labelledby="birthday-title">
+      <div class="confetti" aria-hidden="true">✦　♡　✧　✿　♡　✦</div>
+      <p class="handwritten">today, the world got a little brighter</p>
+      <div class="cake" aria-hidden="true"><span class="candle">♥</span><span class="cake-top"></span><span class="cake-mid"></span><span class="cake-base"></span></div>
+      <h2 id="birthday-title" aria-label="Happy Birthday, Cutie Pie!"><span id="birthday-title-text" aria-hidden="true"></span><span class="visually-hidden">Happy Birthday, Cutie Pie!</span></h2>
+      <p class="lead"><span id="birthday-message-text" aria-hidden="true"></span><span class="visually-hidden">May your day feel like warm sunshine, soft hugs, and all the love your heart can hold. You deserve the sweetest things. 🎂</span></p>
+      <div class="wish-chips"><span>more laughter ☼</span><span>soft moments ♡</span><span>big dreams ✨</span></div>
+      <button class="primary-button" id="to-gallery">a few things I adore about you <span>↗</span></button>
+      <button class="text-button back-button" type="button" data-back="date-screen">← back</button>
+    </section>
+
+    <section class="screen" id="gallery-screen" aria-labelledby="gallery-title">
+      <p class="handwritten">little things, endless reasons</p>
+      <h2 id="gallery-title">A gallery of <em>you</em></h2>
+      <p class="lead compact">Seven little frames for a person who makes life lovelier.</p>
+      <div class="photo-grid" role="region" aria-label="Photo memories" aria-roledescription="carousel">
+        <div class="photo-track">
+        <article class="photo-card tilt-left"><div class="photo-wrap"><img src="/images/one.jpeg" alt="Memory photo one" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">your smile<br>belongs here ♡</span><span class="photo-number">01</span></div><p>“May your brightest days keep blooming.”</p></article>
+        <article class="photo-card tilt-right"><div class="photo-wrap"><img src="/images/two.jpeg" alt="Memory photo two" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">a little<br>sunshine ✿</span><span class="photo-number">02</span></div><p>“Pretty is an understatement when your kindness shines too.”</p></article>
+        <article class="photo-card tilt-right"><div class="photo-wrap"><img src="/images/three.jpeg" alt="Memory photo three" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">your kind<br>of magic ✧</span><span class="photo-number">03</span></div><p>“There’s a quiet magic in the way you see the world.”</p></article>
+        <article class="photo-card tilt-left"><div class="photo-wrap"><img src="/images/four.jpeg" alt="Memory photo four" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">beautiful<br>inside out ♡</span><span class="photo-number">04</span></div><p>“Beauty looks even more beautiful when it comes with a good heart.”</p></article>
+        <article class="photo-card tilt-left"><div class="photo-wrap"><img src="/images/five.jpeg" alt="Memory photo five" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">our little<br>memory ☼</span><span class="photo-number">05</span></div><p>“Some memories become favourite places we carry inside us.”</p></article>
+        <article class="photo-card tilt-right"><div class="photo-wrap"><img src="/images/six.jpeg" alt="Memory photo six" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">friendship<br>like ours ♡</span><span class="photo-number">06</span></div><p>“A rare kind of friendship: safe, silly, honest, and always close at heart.”</p></article>
+        <article class="photo-card photo-wide"><div class="photo-wrap"><img src="/images/seven.jpeg" alt="Memory photo seven" onerror="this.parentElement.classList.add('placeholder');this.style.display='none'"><span class="photo-fallback">the world is<br>prettier with you ✨</span><span class="photo-number">07</span></div><p>“Never forget how much light you bring just by being yourself.”</p></article>
+        </div>
+      </div>
+      <div class="carousel-controls" aria-label="Photo carousel controls">
+        <button class="carousel-button" id="photo-previous" type="button" aria-label="Previous photo">‹</button>
+        <span id="carousel-status" aria-live="polite"></span>
+        <button class="carousel-button" id="photo-next" type="button" aria-label="Next photo">›</button>
+      </div>
+      <p class="microcopy">drag or swipe the photos to turn the carousel</p>
+      <button class="primary-button" id="to-wishes">one more thing, for birthday girl <span>↗</span></button>
+      <button class="text-button back-button" type="button" data-back="birthday-screen">← back</button>
+    </section>
+
+    <section class="screen" id="wishes-screen" aria-labelledby="wishes-title">
+      <div class="blush-orb orb-one"></div><div class="blush-orb orb-two"></div>
+      <div class="wish-letter">
+        <div class="letter-top">A little wish for your next chapter <span>♡</span></div>
+        <p class="handwritten">from my heart to yours</p>
+        <h2 id="wishes-title">May your future be <em>beautiful.</em></h2>
+        <p>May you always have the courage to chase the dreams that make your eyes sparkle. May every goal you work for bring you closer to the life you imagine.</p>
+        <p>When the road feels long, I hope you remember how capable, thoughtful, and wonderfully unique you are. Celebrate every little win. Learn from every detour. Keep choosing the things that make your heart feel alive.</p>
+        <p>May happiness find you in quiet mornings, unexpected laughter, loyal people, and all the tiny moments in between. May your hard work bloom into something you’re proud of—and may you never have to dim your light to fit anywhere.</p>
+        <p class="signature">Keep glowing, always. <span>♡</span></p>
+      </div>
+      <button class="primary-button" id="to-final">your tiny final surprise <span>↗</span></button>
+      <button class="text-button back-button" type="button" data-back="gallery-screen">← back</button>
+    </section>
+
+    <section class="screen" id="final-screen" aria-labelledby="final-title">
+      <p class="handwritten">and finally...</p>
+      <h3 id="final-title">one small celebration smile, <em>just for you.</em></h3>
+      <div class="gif-frame"><video id="favorite-gif" autoplay loop muted playsinline aria-label="A cute celebratory animation"><source src="/images/vdeo.mp4" type="video/mp4"></video><span class="gif-sparkle sparkle-one">✦</span><span class="gif-sparkle sparkle-two">♡</span></div>
+      <p class="lead compact">I hope this made you smile, even for a second. Your turn now…</p>
+      <form id="reply-form" class="reply-card">
+        <label for="reply-message"> a little note for me Dora 💌</label>
+        <textarea id="reply-message" name="message" maxlength="2000" rows="3" placeholder="Anything you want to say..." required></textarea>
+        <div class="reply-bottom"><span>only a little space for your words</span><button class="send-button" type="submit" aria-label="Send reply">send ♡</button></div>
+        <p class="status-message" id="reply-status" role="status"></p>
+      </form>
+      <button class="text-button restart" id="restart">↺ relive the little surprise</button>
+      <p class="footer-note">wrapped in warmth, friendship & a little bit of magic 🤎</p>
+      <button class="text-button back-button" type="button" data-back="wishes-screen">← back</button>
+    </section>
+  </main>
+  <dialog class="photo-lightbox" id="photo-lightbox" aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" aria-label="Close photo viewer">×</button>
+    <button class="lightbox-nav lightbox-previous" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">›</button>
+  </dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
